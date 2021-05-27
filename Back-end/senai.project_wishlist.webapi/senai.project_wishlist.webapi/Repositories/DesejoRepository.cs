@@ -1,5 +1,5 @@
-﻿using senai.wishlist.webApi.Contexts;
-using senai.wishlist.webApi.Domains;
+﻿using senai.project_wishlist.webapi.Contexts;
+using senai.project_wishlist.webapi.Domains;
 using senai.wishlist.webApi.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -10,42 +10,46 @@ namespace senai.wishlist.webApi.Repositories
 {
     public class DesejoRepository : IDesejoRepository
     {
-        ProjectWishListContext ctx = new ProjectWishListContext();
+        WishListContext ctx = new WishListContext();
 
         public void Atualizar(int id, Desejo DesejoAtt)
         {
             Desejo DesejoBuscado = ctx.Desejos.Find(id);
 
-            if (DesejoAtt.Descricao != null && DesejoAtt.de != null && DesejoAtt.Email != null && DesejoAtt.Senha != null)
+            if (DesejoAtt.Descricao != null && DesejoAtt.DataCriacao == DateTime.UtcNow && (DesejoAtt.Prioridade == true || DesejoAtt.Prioridade == false) && (DesejoAtt.Favorito == true || DesejoAtt.Favorito == false))
             {
-                DesejoBuscado.IdTipoUsuario = UsuarioAtt.IdTipoUsuario;
-                DesejoBuscado.NomeUsuario = UsuarioAtt.NomeUsuario;
-                DesejoBuscado.Email = UsuarioAtt.Email;
-                DesejoBuscado.Senha = UsuarioAtt.Senha;
+                DesejoBuscado.Descricao = DesejoAtt.Descricao;
+                DesejoBuscado.DataCriacao = DesejoAtt.DataCriacao;
+                DesejoBuscado.Prioridade = DesejoAtt.Prioridade;
+                DesejoBuscado.Favorito = DesejoAtt.Favorito;
             }
 
-            ctx.Usuarios.Update(UsuarioBuscado);
+            ctx.Desejos.Update(DesejoBuscado);
             ctx.SaveChanges();
         }
 
         public Desejo BuscarPorId(int id)
         {
-            throw new NotImplementedException();
+            return ctx.Desejos.FirstOrDefault(t => t.IdDesejo == id);
         }
 
         public void Cadastrar(Desejo NovoDesejo)
         {
-            throw new NotImplementedException();
+            ctx.Desejos.Add(NovoDesejo);
+            ctx.SaveChanges(); ;
         }
 
         public void Deletar(int id)
         {
-            throw new NotImplementedException();
+            Desejo DesejoBuscado = ctx.Desejos.Find(id);
+
+            ctx.Desejos.Remove(DesejoBuscado);
+            ctx.SaveChanges();
         }
 
         public List<Desejo> Listar()
         {
-            throw new NotImplementedException();
+            return ctx.Desejos.ToList();
         }
     }
 }

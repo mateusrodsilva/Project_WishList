@@ -1,5 +1,5 @@
-﻿using senai.wishlist.webApi.Contexts;
-using senai.wishlist.webApi.Domains;
+﻿using senai.project_wishlist.webapi.Contexts;
+using senai.project_wishlist.webapi.Domains;
 using senai.wishlist.webApi.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -10,7 +10,7 @@ namespace senai.wishlist.webApi.Repositories
 {
     public class UsuarioRepository : IUsuarioRepository
     {
-        ProjectWishListContext ctx = new ProjectWishListContext();
+        WishListContext ctx = new WishListContext();
         public void Atualizar(int id, Usuario UsuarioAtt)
         {
             Usuario UsuarioBuscado = ctx.Usuarios.Find(id);
@@ -29,7 +29,7 @@ namespace senai.wishlist.webApi.Repositories
 
         public Usuario BuscarPorId(int id)
         {
-            return ctx.Usuarios.FirstOrDefault(t => t.IdUsuario == id); ;
+            return ctx.Usuarios.FirstOrDefault(t => t.IdUsuario == id);
         }
 
         public void Cadastrar(Usuario NovoUsuario)

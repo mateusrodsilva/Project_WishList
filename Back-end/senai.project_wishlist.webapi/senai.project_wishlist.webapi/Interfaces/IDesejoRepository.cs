@@ -1,4 +1,4 @@
-﻿using senai.wishlist.webApi.Domains;
+﻿using senai.project_wishlist.webapi.Domains;
 using System;
 using System.Collections.Generic;
 using System.Linq;
