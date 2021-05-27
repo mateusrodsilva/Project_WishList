@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "senai.project_wishlist.webapi", "senai.project_wishlist.webapi\senai.project_wishlist.webapi.csproj", "{FD1DD874-01E7-4898-8DBA-16F8FF04B74F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD1DD874-01E7-4898-8DBA-16F8FF04B74F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD1DD874-01E7-4898-8DBA-16F8FF04B74F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD1DD874-01E7-4898-8DBA-16F8FF04B74F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD1DD874-01E7-4898-8DBA-16F8FF04B74F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {396ABAFF-2F32-4D40-9809-4005EFD4841E}
+	EndGlobalSection
+EndGlobal
