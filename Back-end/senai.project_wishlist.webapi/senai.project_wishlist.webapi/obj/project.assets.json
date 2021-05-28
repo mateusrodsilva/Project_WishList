@@ -7358,19 +7358,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mrodr.LAPTOP-DFNK1JF6\\.nuget\\packages\\": {}
+    "C:\\Users\\mrodr\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mrodr.LAPTOP-DFNK1JF6\\Desktop\\Project_WishList\\Back-end\\senai.project_wishlist.webapi\\senai.project_wishlist.webapi\\senai.project_wishlist.webapi.csproj",
+      "projectUniqueName": "C:\\Users\\mrodr\\Documents\\GitHub\\Project_WishList\\Back-end\\senai.project_wishlist.webapi\\senai.project_wishlist.webapi\\senai.project_wishlist.webapi.csproj",
       "projectName": "senai.project_wishlist.webapi",
-      "projectPath": "C:\\Users\\mrodr.LAPTOP-DFNK1JF6\\Desktop\\Project_WishList\\Back-end\\senai.project_wishlist.webapi\\senai.project_wishlist.webapi\\senai.project_wishlist.webapi.csproj",
-      "packagesPath": "C:\\Users\\mrodr.LAPTOP-DFNK1JF6\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mrodr.LAPTOP-DFNK1JF6\\Desktop\\Project_WishList\\Back-end\\senai.project_wishlist.webapi\\senai.project_wishlist.webapi\\obj\\",
+      "projectPath": "C:\\Users\\mrodr\\Documents\\GitHub\\Project_WishList\\Back-end\\senai.project_wishlist.webapi\\senai.project_wishlist.webapi\\senai.project_wishlist.webapi.csproj",
+      "packagesPath": "C:\\Users\\mrodr\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mrodr\\Documents\\GitHub\\Project_WishList\\Back-end\\senai.project_wishlist.webapi\\senai.project_wishlist.webapi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\mrodr.LAPTOP-DFNK1JF6\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mrodr\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7429,7 +7429,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }
